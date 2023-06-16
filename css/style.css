@@ -1,0 +1,75 @@
+body{
+
+padding: 0;
+margin: 0;
+background-color: black;
+
+}
+
+
+
+nav{
+
+    background-color: rgba(0, 0, 0, 0.062);
+    
+}
+
+.navbar-brand{
+    
+    color: white;
+
+
+}
+
+.nav-item a{
+    color: white;
+   text-decoration: none;
+   margin: 10px;
+    
+
+}
+
+.nav-item a:hover{
+   color:red;
+   text-decoration: none;
+   transform: scale(1.1);
+   transition: 0.5s;
+
+    
+
+}
+
+
+.collapse{
+
+    justify-content: end;
+
+}
+
+
+.back-video{
+
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    
+    }
+
+    @media(min-aspect-ratio:16/9){
+
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media(max-aspect-ratio:16/9){
+
+        .back-video{
+            width: auto;
+            height: 100%;
+        }
+    }
+
