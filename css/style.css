@@ -6,6 +6,9 @@ background-color: black;
 
 }
 
+
+/*
+
 .fixarRodape {
     bottom: 0;
     position: fixed;
@@ -14,6 +17,8 @@ background-color: black;
     color: white;
   
 }
+
+*/
 
 
 
@@ -30,17 +35,14 @@ nav{
     
 }
 
-.navbar-brand{
-    
-    color: white;
 
-
-}
 
 .nav-item a{
-    color: white;
+   color: rgb(243, 28, 28);
    text-decoration: none;
    margin: 10px;
+   text-shadow: 0 0 8px red;
+   filter: brightness(200%) drop-shadow(2px 2px  2px red);
     
 
 }
@@ -51,9 +53,33 @@ nav{
    transform: scale(1.1);
    transition: 0.5s;
 
-    
-
 }
+
+
+
+.nav-item:active{
+    color:red;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: 0.5s;
+ 
+}
+
+.img-logo{
+
+    width: 60px;
+    filter: brightness(200%) drop-shadow(2px 2px  5px red);
+}
+
+.img-logo:hover{
+transform: scale(1.1);
+transition: 0.5s;
+    
+}
+
+
+
+
 
 
 .collapse{
@@ -63,9 +89,11 @@ nav{
 }
 
 
-.back-video{
 
-    
+
+/* video background responsivo */
+.back-video{
+   
     position: absolute;
     top: 0;
     left: 0;
@@ -73,9 +101,38 @@ nav{
     height: 100%;
     display: block;
     object-fit: cover;
+    z-index: -1;
+    opacity: 0.95;
     
     }
 
+ section {
+
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     text-shadow: 0 0 5px red;
+        
+    }
+
+    section h1{
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 10px;
+       
+        
+    }
+
+    section p {
+        color: white;
+        
+
+        
+    }
+
+  
 
 
 
